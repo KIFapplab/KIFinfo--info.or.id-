@@ -212,9 +212,8 @@ $app_name = idx($app_info, 'name', '');
 
       <div>
         <h1>Selamat datang, <strong><?php echo he(idx($basic, 'name')); ?></strong></h1>
-        <p class="tagline">
-          KIFinfo
-          <a href="<?php echo he(idx($app_info, 'link'));?>" target="_top"><?php echo he($app_name); ?></a>
+        <p class="tagline">          
+          <a href="<?php echo he(idx($app_info, 'link'));?>" target="_top"><?php echo he($app_name); ?></a> oleh <a href="http://facebook.com/kartoenbitjara.indonesia">Yayasan KI</a>
         </p>
 
         <div id="share-app">
@@ -226,12 +225,12 @@ $app_name = idx($app_info, 'name', '');
               </a>
             </li>
             <li>
-              <a href="https://www.facebook.com/messages/KIFoundation" class="facebook-button speech-bubble" id="sendToFriends" data-url="<?php echo AppInfo::getUrl(); ?>">
+              <a href="https://www.facebook.com/KIFoundation" class="facebook-button speech-bubble" id="sendToFriends" data-url="<?php echo AppInfo::getUrl(); ?>">
                 <span class="speech-bubble">Kirim Pesan</span>
               </a>
             </li>
             <li>
-              <a href="http://facebook.com/kartoenbitjara.indonesia" class="facebook-button apprequests" id="sendRequest" data-message="Test this awesome app">
+              <a href="https://www.facebook.com/KIFoundation" class="facebook-button apprequests" id="sendRequest" data-message="Test this awesome app">
                 <span class="apprequests">Send Requests</span>
               </a>
             </li>
@@ -248,7 +247,8 @@ $app_name = idx($app_info, 'name', '');
 
     <section id="get-started">
       <p>Selamat datang di KIFinfo: info.or.id</p>	  
-      <a href="http://info.or.id/kirim-info/" target="_top" class="button">Mulai Menggunakan Info.or.id</a>
+      <a href="http://info.or.id/wp-admin" target="blank" class="button">Mulai Menggunakan Info.or.id</a>
+	  <a href="http://info.or.id/app" class="button" data-url="<?php echo AppInfo::getUrl(); ?>">Melihat Arsip Visual</a>
     </section>
 
     <?php
@@ -256,10 +256,10 @@ $app_name = idx($app_info, 'name', '');
     ?>
 
     <section id="samples" class="clearfix">
-      <h1>Integrasi</h1>
+      <h1>Integrasi KIFinfo dan Anda</h1>
 
       <div class="list">
-        <h3>Beberapa teman anda</h3>
+        <h3>Beberapa teman Anda</h3>
         <ul class="friends">
           <?php
             foreach ($friends as $friend) {
@@ -356,7 +356,7 @@ $app_name = idx($app_info, 'name', '');
       <ul>
         <li>
           <a href="http://info.or.id/" target="blank"><img onmouseover="this.src='http://kartoenbitjara.or.id/wp-content/uploads/2012/08/info.or_.id_.png'" onmouseout="this.src='http://kartoenbitjara.or.id/wp-content/uploads/2012/08/info-or-id.png'" src="http://kartoenbitjara.or.id/wp-content/uploads/2012/08/info-or-id.png" alt="" /></a>
-          <p>Anda bisa <a href="http://info.or.id/kirim-info/">kirim info</a>, pelajari <a href="http://info.or.id/persyaratan-dan-ketentuan-penggunaan-info-or-id/" target="blank">Persyaratan Penggunaan</a>, atau baca <a href="http://info.or.id/kebijakan-privasi/" target="blank">Kebijakan Privasi</a> di <a href="http://info.or.id/" target="_top">Info.or.id</a>.</p>
+          <p>Anda bisa <a href="http://info.or.id/kirim-info/" target="blank">berbagi info</a>, membaca <a href="http://info.or.id/" target="blank">info</a>, dan/atau melihat <a href="http://info.or.id/app/" data-url="<?php echo AppInfo::getUrl(); ?>">arsip visual</a>. Silahkan mempelajari <a href="http://info.or.id/persyaratan-dan-ketentuan-penggunaan-info-or-id/" target="blank">Persyaratan Penggunaan</a>, atau baca <a href="http://info.or.id/kebijakan-privasi/" target="blank">Kebijakan Privasi</a> di Info.or.id.</p>
         </li>
         <li>
           <a href="http://kartoenbitjara.or.id/" target="blank"><img onmouseover="this.src='http://kartoenbitjara.or.id/wp-content/uploads/2012/08/Yayasan-KI.png'" onmouseout="this.src='http://kartoenbitjara.or.id/wp-content/uploads/2012/08/Yayasan-KI1.png'" src="http://kartoenbitjara.or.id/wp-content/uploads/2012/08/Yayasan-KI1.png" alt="" /></a>

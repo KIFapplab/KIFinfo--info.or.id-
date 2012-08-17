@@ -9,7 +9,7 @@ body {
   color: #333;
   font: 14px/1.5em "Lucida Grande", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  width: 720px;
+  width: 750px;
   margin: 20px;
 }
 
@@ -106,8 +106,8 @@ header .tagline {
   display: -moz-inline-box;
   display: inline-block;
   font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
-  font-size: 11px;
-  font-weight: bold;
+  font-size: 10px;
+  font-weight: normal;
   line-height: 20px;
   margin: 0;
   outline: none;
@@ -117,7 +117,7 @@ header .tagline {
 
 .facebook-button span {
   background: url("../images/sprites.png") no-repeat;
-  padding: 0 7px 0 21px;
+  padding: 0 7px 0 19px;
 }
 
 .facebook-button .speech-bubble {
